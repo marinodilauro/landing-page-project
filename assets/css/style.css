@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #65558f;
+  --color-secondary: #9987c5;
+  --color-light: #f7ebff;
+  --color-lighter: #fcf8ff;
+}
+
+/* #region :::: UTILITY RULES :::: */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-lighter);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: var(--color-lighter);
+  color: var(--color-dark);
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 600;
+}
+
+/* #endregion :::: UTILITY RULES :::: */
+
+/* #region :::: HEADER :::: */
+
+header {
+  background-color: var(--color-primary);
+  padding: 0.8rem 0;
+}
+
+.logo,
+.login {
+  width: 30%;
+}
+
+.logo {
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-lighter);
+  justify-content: flex-start;
+}
+
+.links {
+  color: var(--color-lighter);
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  a {
+    text-decoration: none;
+    color: var(--color-lighter);
+
+    &:hover {
+      color: var(--color-light);
+      border-bottom: 2px solid var(--color-secondary);
+    }
+  }
+}
+
+.login {
+  justify-content: flex-end;
+}
+
+.btn_login {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.7rem;
+
+  &:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-lighter);
+  }
+}
+
+/* #endregion :::: HEADER :::: */
+
+/* #region :::: MAIN :::: */
+.banner {
+  position: relative;
+  height: 600px;
+  background-image: url(../img/travelog_cover.webp);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .banner_content {
+    position: relative;
+
+    h2 {
+      font-family: "Unica One", sans-serif;
+    }
+  }
+
+  .cta {
+    background-color: var(--color-primary);
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+
+    a {
+      color: var(--color-lighter);
+    }
+
+    &:hover {
+      background-color: var(--color-secondary);
+      color: var(--color-lighter);
+
+    }
+  }
+}
+
+/* #endregion :::: MAIN :::: */

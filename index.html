@@ -12,6 +12,94 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- #region HEADER -->
+    <header class="d-flex justify-content-center align-items-center">
+      <div class="container d-flex justify-content-around align-items-center">
+        <!-- Logo -->
+        <div
+          class="logo d-flex justify-content-start align-items-center flex-grow-1"
+        >
+          <h2 class="mb-0">TraveLog</h2>
+        </div>
+
+        <!-- Links -->
+        <nav
+          class="links list-unstyled d-flex justify-content-center align-items-center flex-grow-3 gap-5 m-0"
+        >
+          <a href="">Perch&eacute; TraveLog</a>
+          <a href="">Abbonamenti</a>
+          <a href="">Tutorial</a>
+        </nav>
+
+        <!-- Login -->
+        <div
+          class="login d-flex justify-content-end align-items-center flex-grow-1"
+        >
+          <button type="button" target="_blank" class="btn btn_login">
+            Accedi
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- #endregion HEADER -->
+
+    <!-- #region MAIN -->
+    <main>
+      <!-- Banner -->
+      <div class="banner p-5 d-flex justify-content-start align-items-center">
+        <div
+          class="banner_content d-flex flex-column justify-content-start ms-5"
+        >
+          <h2 class="mb-0 display-1">TraveLog</h2>
+
+          <p class="col-lg-5 fs-5 text-muted mb-5">
+            TraveLog è la tua app di fiducia per pianificare e organizzare i
+            viaggi! 🎒 Con TraveLog, puoi creare itinerari dettagliati,
+            aggiungere tappe ai tuoi viaggi e visualizzare tutto su una mappa
+            interattiva. L'app è ottimizzata per funzionare anche offline grazie
+            alla sua Progressive Web App (PWA).
+          </p>
+          <div>
+            <button
+              class="cta btn btn-primary btn-lg px-4 rounded-pill"
+              type="button"
+            >
+              <a href="https://travelog.website" target="_blank"
+                >Vai al sito
+                <i class="ms-2 fa-solid fa-up-right-from-square"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- #endregion MAIN -->
+  </body>
 </html>
