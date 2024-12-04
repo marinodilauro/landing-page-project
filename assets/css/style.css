@@ -23,6 +23,15 @@ a {
 
 .bg_primary {
   background-color: var(--color-primary);
+  color: var(--color-lighter);
+}
+
+.bg_light {
+  background-color: var(--color-light);
+}
+
+.border_primary {
+  border: 1px solid var(--color-primary)
 }
 
 .btn {
@@ -31,6 +40,11 @@ a {
   border: none;
   border-radius: 1.5rem;
   font-weight: 600;
+
+  &:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-lighter);
+  }
 }
 
 /* #endregion :::: UTILITY RULES :::: */
@@ -119,7 +133,6 @@ header {
     &:hover {
       background-color: var(--color-secondary);
       color: var(--color-lighter);
-
     }
   }
 }
@@ -133,6 +146,28 @@ header {
 
   i {
     color: var(--color-lighter);
+  }
+}
+
+/* Pricing */
+#pricing {
+  table {
+    tr {
+
+      th,
+      td {
+        background-color: var(--color-lighter);
+      }
+
+      &:hover {
+
+        td {
+          background-color: var(--color-secondary);
+          color: var(--color-lighter);
+        }
+      }
+    }
+
   }
 }
 
