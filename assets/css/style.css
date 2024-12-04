@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+.bg_primary {
+  background-color: var(--color-primary);
+}
+
 .btn {
   background-color: var(--color-lighter);
   color: var(--color-dark);
@@ -84,6 +88,7 @@ header {
 /* #endregion :::: HEADER :::: */
 
 /* #region :::: MAIN :::: */
+/* Banner */
 .banner {
   position: relative;
   height: 600px;
@@ -94,6 +99,8 @@ header {
 
   .banner_content {
     position: relative;
+
+    left: -13%;
 
     h2 {
       font-family: "Unica One", sans-serif;
@@ -114,6 +121,18 @@ header {
       color: var(--color-lighter);
 
     }
+  }
+}
+
+/* Features */
+#features {
+  .icon-square {
+    width: 3.5rem;
+    aspect-ratio: 1;
+  }
+
+  i {
+    color: var(--color-lighter);
   }
 }
 

@@ -53,7 +53,7 @@
         <nav
           class="links list-unstyled d-flex justify-content-center align-items-center flex-grow-3 gap-5 m-0"
         >
-          <a href="">Perch&eacute; TraveLog</a>
+          <a href="#features">Perch&eacute; TraveLog</a>
           <a href="">Abbonamenti</a>
           <a href="">Tutorial</a>
         </nav>
@@ -73,13 +73,15 @@
     <!-- #region MAIN -->
     <main>
       <!-- Banner -->
-      <div class="banner p-5 d-flex justify-content-start align-items-center">
+      <div
+        class="banner p-5 d-flex justify-content-start align-items-center mb-5"
+      >
         <div
-          class="banner_content d-flex flex-column justify-content-start ms-5"
+          class="container banner_content d-flex flex-column justify-content-start"
         >
           <h2 class="mb-0 display-1">TraveLog</h2>
 
-          <p class="col-lg-5 fs-5 text-muted mb-5">
+          <p class="col-lg-7 fs-5 text-muted mb-5">
             TraveLog è la tua app di fiducia per pianificare e organizzare i
             viaggi! 🎒 Con TraveLog, puoi creare itinerari dettagliati,
             aggiungere tappe ai tuoi viaggi e visualizzare tutto su una mappa
@@ -99,6 +101,51 @@
           </div>
         </div>
       </div>
+
+      <!-- Features -->
+      <section id="features">
+        <div class="container px-4 py-5" id="hanging-icons">
+          <h2 class="pb-2 border-bottom">Features</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div
+                class="icon-square text-body-emphasis rounded-3 bg_primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-3"
+              >
+                <i class="fa-solid fa-plane-departure"></i>
+              </div>
+              <div>
+                <h3 class="fs-3 text-body-emphasis">Creazione di viaggi</h3>
+                <p>
+                  Registra e gestisci i tuoi viaggi, con dettagli come
+                  destinazioni, date e descrizioni.
+                </p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div
+                class="icon-square text-body-emphasis rounded-3 bg_primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-3"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h3 class="fs-3 text-body-emphasis">Aggiunta di tappe</h3>
+                <p>Aggiungi tappe ai tuoi viaggi e visualizzale sulla mappa.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div
+                class="icon-square text-body-emphasis rounded-3 bg_primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-3"
+              >
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div>
+                <h3 class="fs-3 text-body-emphasis">Visualizzazione mappa</h3>
+                <p>Vedi le tappe del tuo viaggio su una mappa interattiva.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- #endregion MAIN -->
   </body>
