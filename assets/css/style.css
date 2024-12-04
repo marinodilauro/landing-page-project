@@ -9,6 +9,8 @@
   --color-secondary: #9987c5;
   --color-light: #f7ebff;
   --color-lighter: #fcf8ff;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 /* #region :::: UTILITY RULES :::: */
@@ -28,6 +30,10 @@ a {
 
 .bg_light {
   background-color: var(--color-light);
+}
+
+.font_light {
+  color: var(--color-lighter);
 }
 
 .border_primary {
@@ -52,50 +58,56 @@ a {
 /* #region :::: HEADER :::: */
 
 header {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
   background-color: var(--color-primary);
   padding: 0.8rem 0;
-}
 
-.logo,
-.login {
-  width: 30%;
-}
 
-.logo {
-  font-family: "Unica One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--color-lighter);
-  justify-content: flex-start;
-}
+  .logo,
+  .login {
+    width: 30%;
+  }
 
-.links {
-  color: var(--color-lighter);
-  font-size: 0.8rem;
-  font-weight: 600;
+  .logo {
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: flex-start;
 
-  a {
-    text-decoration: none;
-    color: var(--color-lighter);
-
-    &:hover {
-      color: var(--color-light);
-      border-bottom: 2px solid var(--color-secondary);
+    a {
+      color: var(--color-lighter);
     }
   }
-}
 
-.login {
-  justify-content: flex-end;
-}
-
-.btn_login {
-  font-size: 0.8rem;
-  padding: 0.4rem 0.7rem;
-
-  &:hover {
-    background-color: var(--color-secondary);
+  .links {
     color: var(--color-lighter);
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    a {
+      text-decoration: none;
+      color: var(--color-lighter);
+
+      &:hover {
+        color: var(--color-light);
+        border-bottom: 2px solid var(--color-secondary);
+      }
+    }
+  }
+
+  .login {
+    justify-content: flex-end;
+  }
+
+  .btn_login {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.7rem;
+
+    &:hover {
+      background-color: var(--color-secondary);
+      color: var(--color-lighter);
+    }
   }
 }
 
@@ -171,4 +183,25 @@ header {
   }
 }
 
+/* Tutorial */
+#tutorial {
+  .video_container {
+    max-width: 25%;
+    overflow: hidden;
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 0.8rem;
+    }
+  }
+}
+
 /* #endregion :::: MAIN :::: */
+
+/* #region :::: FOOTER :::: */
+a {
+  color: var(--color-lighter)
+}
+
+/* #endregion :::: FOOTER :::: */
